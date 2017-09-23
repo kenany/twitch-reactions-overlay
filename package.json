@@ -1,0 +1,47 @@
+{
+  "name": "twitch-reactions-overlay",
+  "version": "1.0.0",
+  "description": "Overlay for emotes from chat",
+  "main": "server/index.js",
+  "scripts": {
+    "build-client": "preact build --src client --no-prerender --no-production",
+    "build-server": "babel server --out-dir out --source-maps",
+    "build": "npm run build-client && npm run build-server",
+    "flow": "flow check",
+    "lint": "eslint client server",
+    "validate": "npm run build && npm run lint && npm run flow"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "emotion": "^7.3.1",
+    "node-fetch": "^1.7.3",
+    "preact": "^8.2.5",
+    "preact-emotion": "^7.3.0",
+    "preact-redux": "^2.0.2",
+    "recompose": "^0.25.0",
+    "reconnecting-websocket": "^3.2.1",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0",
+    "tmi.js": "^1.2.1",
+    "uws": "^8.14.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-emotion": "^7.3.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.6.1",
+    "eslint-config-fbjs": "^2.0.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-flow-header": "^0.2.0",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-relay": "0.0.8",
+    "flow-bin": "^0.55.0",
+    "preact-cli": "^1.4.1"
+  }
+}

@@ -1,0 +1,6 @@
+[ignore]
+.*/node_modules/babel-plugin-emotion
+.*/node_modules/babel-plugin-transform-react-remove-prop-types
+.*/node_modules/emotion
+.*/node_modules/graphql
+.*/node_modules/preact
