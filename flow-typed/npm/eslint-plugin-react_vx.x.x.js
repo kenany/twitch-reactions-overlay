@@ -1,4 +1,4 @@
-// flow-typed signature: 1b2203a89275f179996a1ba3c998bf14
+// flow-typed signature: ff0e42c36961a4f44e35e23a12c15a0b
 // flow-typed version: <<STUB>>/eslint-plugin-react_v^7.3.0/flow_v0.55.0
 
 /**
@@ -59,6 +59,10 @@ declare module 'eslint-plugin-react/lib/rules/jsx-closing-bracket-location' {
 }
 
 declare module 'eslint-plugin-react/lib/rules/jsx-closing-tag-location' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-react/lib/rules/jsx-curly-brace-presence' {
   declare module.exports: any;
 }
 
@@ -346,6 +350,9 @@ declare module 'eslint-plugin-react/lib/rules/jsx-closing-bracket-location.js' {
 }
 declare module 'eslint-plugin-react/lib/rules/jsx-closing-tag-location.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-closing-tag-location'>;
+}
+declare module 'eslint-plugin-react/lib/rules/jsx-curly-brace-presence.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-curly-brace-presence'>;
 }
 declare module 'eslint-plugin-react/lib/rules/jsx-curly-spacing.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-curly-spacing'>;
