@@ -35,6 +35,7 @@ export default function reducer(
     case REMOVE_EMOTE:
       return {
         emotes: state.emotes.filter((emote: UniqueEmote) => {
+          // $FlowFixMe: no idea how `uuid` does not exist here
           return emote.uuid !== action.payload.uuid;
         })
       };
