@@ -1,9 +1,8 @@
 // @flow
 
-export type Emote = {
+type BaseEmote = {
   name: string,
   id: string,
-  type: 'twitch' | 'bttv' | 'ffz',
   size: {
     width: number,
     height: number
@@ -11,10 +10,22 @@ export type Emote = {
   isGIF: boolean
 };
 
-export type UniqueEmote = {
+type TwitchEmote = BaseEmote & { type: 'twitch' };
+type BTTVEmote = BaseEmote & { type: 'bttv' };
+type FFZEmote = BaseEmote & { type: 'ffz', scale: number };
+
+export type Emote = TwitchEmote | BTTVEmote | FFZEmote;
+
+type BaseUniqueEmote = {
   uuid: number,
   position: {
     x: number,
     y: number
   }
-} & Emote;
+};
+
+type UniqueTwitchEmote = BaseUniqueEmote & TwitchEmote;
+type UniqueBTTVEmote = BaseUniqueEmote & BTTVEmote;
+type UniqueFFZEmote = BaseUniqueEmote & FFZEmote;
+
+export type UniqueEmote = UniqueTwitchEmote | UniqueBTTVEmote | UniqueFFZEmote;
