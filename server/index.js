@@ -43,8 +43,12 @@ function parseEmotes(message: string, twitchEmotes: UserStateEmotes): Emote[] {
   const words = message.split(' ');
   const emotes = [];
   for (const word of words) {
-    if (validEmotes.has(word)) {
-      emotes.push(Object.assign({}, validEmotes.get(word)));
+
+    // See <https://github.com/facebook/flow/issues/2751> for why
+    // `Map#has(word)` cannot be used here.
+    const validEmote = validEmotes.get(word);
+    if (validEmote) {
+      emotes.push(validEmote);
     }
   }
   return emotes;
