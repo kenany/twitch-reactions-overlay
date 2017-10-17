@@ -4,3 +4,6 @@
 .*/node_modules/emotion
 .*/node_modules/graphql
 .*/node_modules/preact
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
