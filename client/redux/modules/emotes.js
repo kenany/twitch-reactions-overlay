@@ -53,10 +53,17 @@ export function addEmote(emote: Emote, x: number, y: number): ThunkAction {
   return (dispatch, getState) => {
     const newIndex = nextIndex++;
 
+    // $FlowFixMe: object spread + disjoint unions = bad time
+    const newEmote: UniqueEmote = {
+      ...emote,
+      uuid: newIndex,
+      position: { x, y }
+    };
+
     dispatch({
       type: ADD_EMOTE,
       payload: {
-        emote: Object.assign({ uuid: newIndex, position: { x, y } }, emote)
+        emote: newEmote
       }
     });
 
