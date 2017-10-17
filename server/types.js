@@ -24,4 +24,4 @@ export type FFZEmote = BaseEmote & {
   scale: number
 };
 
-export type Emote = BTTVEmote | FFZEmote;
+export type Emote = TwitchEmote | BTTVEmote | FFZEmote;
