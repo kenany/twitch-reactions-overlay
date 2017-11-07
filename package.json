@@ -11,7 +11,7 @@
     "lint": "eslint client server",
     "validate": "npm run build && npm run lint && npm run flow"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
     "emotion": "^7.3.1",
     "node-fetch": "^1.7.3",
