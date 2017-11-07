@@ -41,7 +41,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.3.0",
     "eslint-plugin-relay": "0.0.8",
-    "flow-bin": "^0.57.3",
+    "flow-bin": "^0.58.0",
     "preact-cli": "^1.4.1"
   }
 }
