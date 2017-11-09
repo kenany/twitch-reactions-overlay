@@ -1,6 +1,6 @@
 // @flow
 
-require('dotenv').config()
+require('dotenv').config();
 
 import process from 'process';
 import tmi from 'tmi.js';
