@@ -1,5 +1,7 @@
 // @flow
 
+require('dotenv').config()
+
 import process from 'process';
 import tmi from 'tmi.js';
 import { Server as WebSocketServer } from 'uws';
