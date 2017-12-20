@@ -58,7 +58,7 @@ function parseEmotes(message: string, twitchEmotes: UserStateEmotes): Emote[] {
 
 const tmiOptions = {
   options: {
-    debug: false
+    debug: process.env.NODE_ENV !== 'production'
   },
   connection: {
     reconnect: true
