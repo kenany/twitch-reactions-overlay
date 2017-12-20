@@ -1,4 +1,4 @@
-// flow-typed signature: cc6ad1e28fc21c827edca5ae586939a6
+// flow-typed signature: f35d426cf81fc7c0e90b03559006a3b1
 // flow-typed version: <<STUB>>/eslint-plugin-jsx-a11y_v^6.0.2/flow_v0.58.0
 
 /**
@@ -199,6 +199,18 @@ declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/getTabIndex-test' {
 }
 
 declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/hasAccessibleChild-test' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/implicitRoles/input-test' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/implicitRoles/menu-test' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/implicitRoles/menuitem-test' {
   declare module.exports: any;
 }
 
@@ -725,6 +737,15 @@ declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/getTabIndex-test.js' {
 }
 declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/hasAccessibleChild-test.js' {
   declare module.exports: $Exports<'eslint-plugin-jsx-a11y/__tests__/src/util/hasAccessibleChild-test'>;
+}
+declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/implicitRoles/input-test.js' {
+  declare module.exports: $Exports<'eslint-plugin-jsx-a11y/__tests__/src/util/implicitRoles/input-test'>;
+}
+declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/implicitRoles/menu-test.js' {
+  declare module.exports: $Exports<'eslint-plugin-jsx-a11y/__tests__/src/util/implicitRoles/menu-test'>;
+}
+declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/implicitRoles/menuitem-test.js' {
+  declare module.exports: $Exports<'eslint-plugin-jsx-a11y/__tests__/src/util/implicitRoles/menuitem-test'>;
 }
 declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/isAbstractRole-test.js' {
   declare module.exports: $Exports<'eslint-plugin-jsx-a11y/__tests__/src/util/isAbstractRole-test'>;
