@@ -1,4 +1,5 @@
 // @flow
+// @jsx App
 
 import { h, render } from 'preact';
 import { Provider } from 'preact-redux';

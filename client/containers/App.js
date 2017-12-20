@@ -1,4 +1,5 @@
 // @flow
+// @jsx EmoteImage
 
 import { h } from 'preact';
 import { connect } from 'preact-redux';
