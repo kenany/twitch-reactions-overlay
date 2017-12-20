@@ -14,7 +14,7 @@ if (process.env.NODE_ENV !== 'production') {
 const store = createStore();
 
 function initSocket() {
-  const socket = new WebSocket('ws://192.168.2.16:3000');
+  const socket = new WebSocket(process.env.WS_ADDRESS);
   return socket;
 }
 
