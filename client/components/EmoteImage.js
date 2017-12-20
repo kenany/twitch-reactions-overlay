@@ -1,3 +1,5 @@
+// @flow
+
 import { keyframes } from 'emotion';
 import styled from 'preact-emotion';
 
