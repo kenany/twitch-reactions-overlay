@@ -19,7 +19,7 @@
     "preact": "^8.2.5",
     "preact-emotion": "^7.3.0",
     "preact-redux": "^2.0.2",
-    "recompose": "^0.25.0",
+    "recompose": "^0.26.0",
     "reconnecting-websocket": "^3.2.1",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
