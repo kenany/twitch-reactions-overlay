@@ -19,10 +19,10 @@ function initSocket() {
   return socket;
 }
 
-render((
-  <div className='outer'>
-    <Provider store={store}>
-      <App socket={initSocket()} />
-    </Provider>
-  </div>
-), document.body);
+render(
+  <Provider store={store}>
+    <App socket={initSocket()} />
+  </Provider>,
+  // $FlowFixMe
+  document.body
+);
