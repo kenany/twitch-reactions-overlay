@@ -3,12 +3,14 @@
 
 import { h } from 'preact';
 import { connect } from 'preact-redux';
+import { TransitionGroup } from 'react-transition-group';
 import { compose, lifecycle } from 'recompose';
 import type WebSocket from 'reconnecting-websocket';
 
 import type { Emote, UniqueEmote } from '../types';
 import { addEmote } from '../redux/modules/emotes';
 import EmoteImage from '../components/EmoteImage';
+import Fade from '../components/Fade';
 
 type Props = {
   emotes: UniqueEmote[],
@@ -17,7 +19,7 @@ type Props = {
 
 const App = (props: Props) => {
   return (
-    <div>
+    <TransitionGroup>
       {
         props.emotes.map((emote) => {
           let url = '';
@@ -34,15 +36,18 @@ const App = (props: Props) => {
               break;
           }
 
-          return <EmoteImage
-            key={emote.uuid}
-            src={url}
-            left={emote.position.x + 'px'}
-            top={emote.position.y + 'px'}
-          />;
+          return (
+            <Fade key={emote.uuid}>
+              <EmoteImage
+                src={url}
+                left={emote.position.x + 'px'}
+                top={emote.position.y + 'px'}
+              />
+            </Fade>
+          );
         })
       }
-    </div>
+    </TransitionGroup>
   );
 };
 
