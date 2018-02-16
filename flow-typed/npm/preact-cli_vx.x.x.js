@@ -1,4 +1,4 @@
-// flow-typed signature: fdced1f71bd58f0f5e0be00568f773a8
+// flow-typed signature: 858f4740af2988e6fd976dbfb3db560c
 // flow-typed version: <<STUB>>/preact-cli_v^2.0.2/flow_v0.65.0
 
 /**
@@ -22,7 +22,7 @@ declare module 'preact-cli' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module 'preact-cli/babel' {
+declare module 'preact-cli/babel/index' {
   declare module.exports: any;
 }
 
@@ -139,8 +139,8 @@ declare module 'preact-cli/lib/util' {
 }
 
 // Filename aliases
-declare module 'preact-cli/babel.js' {
-  declare module.exports: $Exports<'preact-cli/babel'>;
+declare module 'preact-cli/babel/index.js' {
+  declare module.exports: $Exports<'preact-cli/babel/index'>;
 }
 declare module 'preact-cli/check.js' {
   declare module.exports: $Exports<'preact-cli/check'>;
