@@ -1,4 +1,4 @@
-// flow-typed signature: 9b9dbb88afd4afea1cc17f32d88621a9
+// flow-typed signature: ed3556f1669868c1f1ddce864daa3f8c
 // flow-typed version: <<STUB>>/eslint-plugin-react_v^7.3.0/flow_v0.66.0
 
 /**
@@ -111,6 +111,10 @@ declare module 'eslint-plugin-react/lib/rules/jsx-indent' {
 }
 
 declare module 'eslint-plugin-react/lib/rules/jsx-key' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-react/lib/rules/jsx-max-depth' {
   declare module.exports: any;
 }
 
@@ -433,6 +437,9 @@ declare module 'eslint-plugin-react/lib/rules/jsx-indent.js' {
 }
 declare module 'eslint-plugin-react/lib/rules/jsx-key.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-key'>;
+}
+declare module 'eslint-plugin-react/lib/rules/jsx-max-depth.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-max-depth'>;
 }
 declare module 'eslint-plugin-react/lib/rules/jsx-max-props-per-line.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/jsx-max-props-per-line'>;
