@@ -1,4 +1,4 @@
-// flow-typed signature: 02d32a7cb6b79352c92266cbd40adb82
+// flow-typed signature: d31939acabda56c14b9a47185983e2b6
 // flow-typed version: <<STUB>>/eslint-plugin-flowtype_v^2.35.1/flow_v0.66.0
 
 /**
@@ -98,6 +98,10 @@ declare module 'eslint-plugin-flowtype/dist/rules/requireReturnType' {
   declare module.exports: any;
 }
 
+declare module 'eslint-plugin-flowtype/dist/rules/requireTypesAtTop' {
+  declare module.exports: any;
+}
+
 declare module 'eslint-plugin-flowtype/dist/rules/requireValidFileAnnotation' {
   declare module.exports: any;
 }
@@ -159,6 +163,10 @@ declare module 'eslint-plugin-flowtype/dist/rules/typeColonSpacing/reporter' {
 }
 
 declare module 'eslint-plugin-flowtype/dist/rules/typeIdMatch' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-flowtype/dist/rules/typeImportStyle' {
   declare module.exports: any;
 }
 
@@ -276,6 +284,9 @@ declare module 'eslint-plugin-flowtype/dist/rules/requireParameterType.js' {
 declare module 'eslint-plugin-flowtype/dist/rules/requireReturnType.js' {
   declare module.exports: $Exports<'eslint-plugin-flowtype/dist/rules/requireReturnType'>;
 }
+declare module 'eslint-plugin-flowtype/dist/rules/requireTypesAtTop.js' {
+  declare module.exports: $Exports<'eslint-plugin-flowtype/dist/rules/requireTypesAtTop'>;
+}
 declare module 'eslint-plugin-flowtype/dist/rules/requireValidFileAnnotation.js' {
   declare module.exports: $Exports<'eslint-plugin-flowtype/dist/rules/requireValidFileAnnotation'>;
 }
@@ -323,6 +334,9 @@ declare module 'eslint-plugin-flowtype/dist/rules/typeColonSpacing/reporter.js' 
 }
 declare module 'eslint-plugin-flowtype/dist/rules/typeIdMatch.js' {
   declare module.exports: $Exports<'eslint-plugin-flowtype/dist/rules/typeIdMatch'>;
+}
+declare module 'eslint-plugin-flowtype/dist/rules/typeImportStyle.js' {
+  declare module.exports: $Exports<'eslint-plugin-flowtype/dist/rules/typeImportStyle'>;
 }
 declare module 'eslint-plugin-flowtype/dist/rules/unionIntersectionSpacing.js' {
   declare module.exports: $Exports<'eslint-plugin-flowtype/dist/rules/unionIntersectionSpacing'>;
