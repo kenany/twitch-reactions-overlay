@@ -22,7 +22,7 @@
     "react-transition-group": "^2.2.1",
     "recompose": "^0.26.0",
     "reconnecting-websocket": "^3.2.1",
-    "redux": "^3.7.2",
+    "redux": "^4.0.0",
     "redux-devtools-extension": "^2.13.2",
     "redux-thunk": "^2.2.0",
     "tmi.js": "^1.2.1",
