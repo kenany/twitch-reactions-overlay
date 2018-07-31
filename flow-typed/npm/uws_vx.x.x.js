@@ -1,4 +1,4 @@
-// flow-typed signature: 02c97d9554a781626c3002fe119810f2
+// flow-typed signature: f6f5c8db28b329d009daa9fea15d1838
 // flow-typed version: <<STUB>>/uws_v^10.148.0/flow_v0.75.0
 
 /**
@@ -15,18 +15,4 @@
 
 declare module 'uws' {
   declare module.exports: any;
-}
-
-/**
- * We include stubs for each file inside this npm package in case you need to
- * require those files directly. Feel free to delete any files that aren't
- * needed.
- */
-declare module 'uws/uws' {
-  declare module.exports: any;
-}
-
-// Filename aliases
-declare module 'uws/uws.js' {
-  declare module.exports: $Exports<'uws/uws'>;
 }
