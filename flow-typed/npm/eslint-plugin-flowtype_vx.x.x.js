@@ -1,4 +1,4 @@
-// flow-typed signature: 23750b69a403ee1161deae83204eae3a
+// flow-typed signature: 5a8c4eaf851302fd2976b659e5494cd1
 // flow-typed version: <<STUB>>/eslint-plugin-flowtype_v^2.35.1/flow_v0.75.0
 
 /**
@@ -171,6 +171,10 @@ declare module 'eslint-plugin-flowtype/dist/rules/typeColonSpacing/evaluateTypeC
 }
 
 declare module 'eslint-plugin-flowtype/dist/rules/typeColonSpacing/evaluateTypical' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-flowtype/dist/rules/typeColonSpacing/evaluateVariables' {
   declare module.exports: any;
 }
 
@@ -360,6 +364,9 @@ declare module 'eslint-plugin-flowtype/dist/rules/typeColonSpacing/evaluateTypeC
 }
 declare module 'eslint-plugin-flowtype/dist/rules/typeColonSpacing/evaluateTypical.js' {
   declare module.exports: $Exports<'eslint-plugin-flowtype/dist/rules/typeColonSpacing/evaluateTypical'>;
+}
+declare module 'eslint-plugin-flowtype/dist/rules/typeColonSpacing/evaluateVariables.js' {
+  declare module.exports: $Exports<'eslint-plugin-flowtype/dist/rules/typeColonSpacing/evaluateVariables'>;
 }
 declare module 'eslint-plugin-flowtype/dist/rules/typeColonSpacing/index.js' {
   declare module.exports: $Exports<'eslint-plugin-flowtype/dist/rules/typeColonSpacing/index'>;
