@@ -1,5 +1,5 @@
-// flow-typed signature: 13782340e66737ab830e7e066dcc756f
-// flow-typed version: ba2a81989d/recompose_v0.x.x/flow_>=v0.57.x
+// flow-typed signature: 06f0287d8d023a67f819b8ed40fa6408
+// flow-typed version: 3da7434fec/recompose_v0.x.x/flow_>=v0.57.x
 
 /**
  * 1) Types give additional constraint on a language, recompose was written on the untyped language
@@ -170,7 +170,7 @@ declare module "recompose" {
    * We make an assumtion that left and right have the same type if exists
    */
   declare export function branch<Base, Enhanced>(
-    testFn: (props: Base) => boolean,
+    testFn: (props: Enhanced) => boolean,
     // not a HOC because of inference problems, this works but HOC<Base, Enhanced> is not
     left: (Component<Base>) => Component<Enhanced>,
     // I never use right part and it can be a problem with inference as should be same type as left
