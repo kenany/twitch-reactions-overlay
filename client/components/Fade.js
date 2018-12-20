@@ -7,8 +7,7 @@ import { h } from 'preact';
 import { CSSTransition } from 'react-transition-group';
 
 type Props = {
-  children: Element<*>,
-  in: boolean
+  children: Element<*>
 };
 
 const fadeEnter = css`
@@ -39,7 +38,6 @@ const fadeClassNames = {
 const Fade = (props: Props) =>
   <CSSTransition
     classNames={fadeClassNames}
-    in={props.in}
     timeout={1000}
     unmountOnExit={true}
   >
