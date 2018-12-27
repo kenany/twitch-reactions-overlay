@@ -9,11 +9,9 @@ type EmotesState = {
   +emotes: UniqueEmote[]
 };
 
-type AddEmoteAction = { type: 'ADD_EMOTE', payload: { emote: UniqueEmote }};
-type RemoveEmoteAction = { type: 'REMOVE_EMOTE', payload: { uuid: number }};
-type EmotesAction =
-  | AddEmoteAction
-  | RemoveEmoteAction;
+type AddEmoteAction = { type: 'ADD_EMOTE', payload: { emote: UniqueEmote } };
+type RemoveEmoteAction = { type: 'REMOVE_EMOTE', payload: { uuid: number } };
+type EmotesAction = AddEmoteAction | RemoveEmoteAction;
 
 type Dispatch = (action: EmotesAction | ThunkAction) => any;
 type GetState = () => EmotesState;
@@ -50,7 +48,7 @@ export default function reducer(
 let nextIndex = 0;
 
 export function addEmote(emote: Emote, x: number, y: number): ThunkAction {
-  return (dispatch, getState) => {
+  return (dispatch) => {
     const newIndex = nextIndex++;
 
     // $FlowFixMe: object spread + disjoint unions = bad time

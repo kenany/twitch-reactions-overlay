@@ -1,12 +1,29 @@
 module.exports = {
-  extends: 'fbjs',
+  extends: [
+    'eslint:recommended',
+    'plugin:flowtype/recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
+    'prettier/flowtype',
+    'prettier/react'
+  ],
+  env: {
+    es6: true
+  },
+  parserOptions: {
+    ecmaVersion: 7,
+    sourceType: 'module'
+  },
+  plugins: [
+    'flowtype',
+    'react'
+  ],
   settings: {
     react: {
       pragma: 'h'
     }
   },
   rules: {
-    'comma-dangle': [1, 'never'],
-    'jsx-quotes': [1, 'prefer-single']
+    'prettier/prettier': [1, { arrowParens: 'always', singleQuote: true }]
   }
 };

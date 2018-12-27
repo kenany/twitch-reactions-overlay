@@ -32,18 +32,16 @@
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.1",
     "@babel/preset-env": "^7.0.0",
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^10.0.1",
     "babel-plugin-emotion": "^8.0.12",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "eslint": "^4.6.1",
-    "eslint-config-fbjs": "^2.0.0",
-    "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-flow-header": "^0.2.0",
+    "eslint": "^5.11.1",
+    "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-flowtype": "^2.35.1",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.3.0",
-    "eslint-plugin-relay": "0.0.8",
     "flow-bin": "^0.82.0",
-    "preact-cli": "^2.0.2"
+    "preact-cli": "^2.0.2",
+    "prettier": "^1.15.3"
   }
 }

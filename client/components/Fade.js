@@ -36,7 +36,7 @@ const fadeClassNames = {
   exitActive: fadeExitActive
 };
 
-const Fade = (props: Props) =>
+const Fade = (props: Props) => (
   <CSSTransition
     classNames={fadeClassNames}
     in={props.in}
@@ -44,6 +44,7 @@ const Fade = (props: Props) =>
     unmountOnExit={true}
   >
     {props.children}
-  </CSSTransition>;
+  </CSSTransition>
+);
 
 export default Fade;

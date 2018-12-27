@@ -20,40 +20,40 @@ type Props = {
 const App = (props: Props) => {
   return (
     <TransitionGroup>
-      {
-        props.emotes.map((emote) => {
-          let url = '';
+      {props.emotes.map((emote) => {
+        let url = '';
 
-          switch (emote.type) {
-            case 'twitch':
-              url = `https://static-cdn.jtvnw.net/emoticons/v1/${emote.id}/3.0`;
-              break;
-            case 'bttv':
-              url = `https://cdn.betterttv.net/emote/${emote.id}/3x`;
-              break;
-            case 'ffz':
-              url = `https://cdn.frankerfacez.com/emoticon/${emote.id}/${emote.scale}`;
-              break;
-          }
+        switch (emote.type) {
+          case 'twitch':
+            url = `https://static-cdn.jtvnw.net/emoticons/v1/${emote.id}/3.0`;
+            break;
+          case 'bttv':
+            url = `https://cdn.betterttv.net/emote/${emote.id}/3x`;
+            break;
+          case 'ffz':
+            url = `https://cdn.frankerfacez.com/emoticon/${emote.id}/${
+              emote.scale
+            }`;
+            break;
+        }
 
-          return (
-            <Fade key={emote.uuid}>
-              <EmoteImage
-                src={url}
-                left={emote.position.x + 'px'}
-                top={emote.position.y + 'px'}
-              />
-            </Fade>
-          );
-        })
-      }
+        return (
+          <Fade key={emote.uuid}>
+            <EmoteImage
+              src={url}
+              left={emote.position.x + 'px'}
+              top={emote.position.y + 'px'}
+            />
+          </Fade>
+        );
+      })}
     </TransitionGroup>
   );
 };
 
 export default compose(
   connect(
-    state => {
+    (state) => {
       return {
         emotes: state.emotes.emotes
       };
