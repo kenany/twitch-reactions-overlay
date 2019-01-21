@@ -1,4 +1,4 @@
-// flow-typed signature: c25c825628f758a65027ad2a17ed7f2e
+// flow-typed signature: 896bbb51b1a943fefff583786cd4d0c0
 // flow-typed version: b6c24caf38/react-transition-group_v2.x.x/flow_>=v0.60.x
 
 // @flow
