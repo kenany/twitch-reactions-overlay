@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^5.0.0",
+    "dotenv": "^6.2.0",
     "emotion": "^8.0.12",
     "node-fetch": "^2.3.0",
     "preact": "^8.2.5",
