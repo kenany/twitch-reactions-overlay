@@ -9,6 +9,8 @@
     "build": "npm run build-client && npm run build-server",
     "flow": "flow check",
     "lint": "eslint client server",
+    "test": "npm run test:size",
+    "test:size": "bundlesize -f build/*.js",
     "validate": "npm run build && npm run lint && npm run flow"
   },
   "license": "MIT",
@@ -35,6 +37,7 @@
     "babel-eslint": "^10.0.1",
     "babel-plugin-emotion": "^8.0.12",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "bundlesize": "^0.17.1",
     "eslint": "^5.14.1",
     "eslint-config-prettier": "^3.6.0",
     "eslint-plugin-flowtype": "^3.4.2",
