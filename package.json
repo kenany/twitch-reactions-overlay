@@ -4,7 +4,7 @@
   "description": "Overlay for emotes from chat",
   "main": "server/index.js",
   "scripts": {
-    "build-client": "preact build --src client --no-prerender --no-production",
+    "build-client": "preact build --src client --no-prerender",
     "build-server": "babel server --out-dir out --source-maps",
     "build": "npm run build-client && npm run build-server",
     "flow": "flow check",
