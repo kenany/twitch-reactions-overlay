@@ -20,7 +20,7 @@
     "node-fetch": "^2.3.0",
     "preact": "^8.2.5",
     "preact-emotion": "^8.0.12",
-    "preact-redux": "^2.0.2",
+    "preact-redux": "2.0.3",
     "react-transition-group": "^2.2.1",
     "recompose": "^0.27.1",
     "reconnecting-websocket": "^4.1.10",
