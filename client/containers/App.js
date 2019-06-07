@@ -31,9 +31,7 @@ const App = (props: Props) => {
             url = `https://cdn.betterttv.net/emote/${emote.id}/3x`;
             break;
           case 'ffz':
-            url = `https://cdn.frankerfacez.com/emoticon/${emote.id}/${
-              emote.scale
-            }`;
+            url = `https://cdn.frankerfacez.com/emoticon/${emote.id}/${emote.scale}`;
             break;
         }
 
