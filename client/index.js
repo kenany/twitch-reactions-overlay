@@ -2,7 +2,7 @@
 // @jsx h
 
 import { h, render } from 'preact';
-import { Provider } from 'preact-redux';
+import { Provider } from 'react-redux';
 import WebSocket from 'reconnecting-websocket';
 
 import createStore from './redux/create-store';

@@ -2,7 +2,7 @@
 // @jsx h
 
 import { h } from 'preact';
-import { connect } from 'preact-redux';
+import { connect } from 'react-redux';
 import { TransitionGroup } from 'react-transition-group';
 import { compose, lifecycle } from 'recompose';
 import type WebSocket from 'reconnecting-websocket';

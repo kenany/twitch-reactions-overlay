@@ -2,18 +2,15 @@
 
 require('dotenv').config();
 
-const flowStripTypes = require('babel-plugin-transform-flow-strip-types');
-const emotionPlugin = require('babel-plugin-emotion');
-const process = require('process');
+import flowStripTypes from '@babel/plugin-transform-flow-strip-types';
+import emotionPlugin from 'babel-plugin-emotion';
+import process from 'process';
 
-module.exports = (config, env, helpers) => {
-  const loaders = config.module.loaders;
-  const babelLoader = loaders.filter((loader) => {
-    return loader.loader === 'babel-loader';
-  })[0];
+export default (config, env, helpers) => {
+  const { rule } = helpers.getLoadersByName(config, 'babel-loader')[0];
 
-  babelLoader.options.plugins.push(flowStripTypes);
-  babelLoader.options.plugins.push(emotionPlugin);
+  rule.options.plugins.push(flowStripTypes);
+  rule.options.plugins.push(emotionPlugin);
 
   config.plugins.push(
     new helpers.webpack.DefinePlugin({
