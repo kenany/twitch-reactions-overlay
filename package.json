@@ -22,7 +22,7 @@
     "dotenv": "^8.0.0",
     "emotion": "10.0.14",
     "node-fetch": "2.6.0",
-    "preact": "10.0.0-rc.0",
+    "preact": "10.0.0-rc.1",
     "react-redux": "7.1.0",
     "react-transition-group": "^2.2.1",
     "recompose": "^0.30.0",
