@@ -4,7 +4,7 @@ require('dotenv').config();
 
 import process from 'process';
 import tmi from 'tmi.js';
-import { Server as WebSocketServer } from 'uws';
+import { App as WebSocketServer } from 'uWebSockets.js';
 
 import type { Emote } from './types';
 import {
@@ -85,12 +85,17 @@ async function init() {
     validEmotes.set(emote.name, emote);
   }
 
-  const wss = new WebSocketServer({ port: 3000 });
   const sockets = [];
 
-  wss.on('connection', (socket) => {
-    sockets.push(socket);
-  });
+  WebSocketServer()
+    .ws('/*', {
+      open: (socket) => sockets.push(socket)
+    })
+    .listen(3000, (listenSocket) => {
+      if (listenSocket) {
+        console.log('listening on port 3000');
+      }
+    });
 
   const tmiClient = new tmi.Client(tmiOptions);
 
