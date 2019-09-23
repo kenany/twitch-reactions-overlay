@@ -48,7 +48,7 @@
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.14.3",
     "flow-bin": "0.84.0",
-    "preact-cli": "3.0.0-rc.4",
+    "preact-cli": "3.0.0-rc.5",
     "prettier": "1.18.2"
   }
 }
