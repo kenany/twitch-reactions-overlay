@@ -24,7 +24,7 @@
     "node-fetch": "2.6.0",
     "preact": "10.0.1",
     "react-redux": "7.1.1",
-    "react-transition-group": "^2.2.1",
+    "react-transition-group": "^4.0.0",
     "recompose": "^0.30.0",
     "reconnecting-websocket": "^4.1.10",
     "redux": "^4.0.0",
