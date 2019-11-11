@@ -2,8 +2,8 @@
 
 import { combineReducers } from 'redux';
 
-import emotes from './emotes';
+import emotes, { type EmotesAction } from './emotes';
 
-export default combineReducers({
+export default combineReducers<_, EmotesAction>({
   emotes
 });

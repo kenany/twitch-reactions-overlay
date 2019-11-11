@@ -16,7 +16,8 @@ module.exports = {
   },
   plugins: [
     'flowtype',
-    'react'
+    'react',
+    'react-hooks'
   ],
   settings: {
     react: {
@@ -24,6 +25,8 @@ module.exports = {
     }
   },
   rules: {
-    'prettier/prettier': [1, { arrowParens: 'always', singleQuote: true }]
+    'prettier/prettier': [1, { arrowParens: 'always', singleQuote: true }],
+    'react-hooks/rules-of-hooks': 2,
+    'react-hooks/exhaustive-deps': 1
   }
 };

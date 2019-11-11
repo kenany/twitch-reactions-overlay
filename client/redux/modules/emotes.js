@@ -5,15 +5,15 @@ import type { Emote, UniqueEmote } from '../../types';
 const ADD_EMOTE = 'ADD_EMOTE';
 const REMOVE_EMOTE = 'REMOVE_EMOTE';
 
-type EmotesState = {
+export type EmotesState = {
   +emotes: UniqueEmote[]
 };
 
 type AddEmoteAction = { type: 'ADD_EMOTE', payload: { emote: UniqueEmote } };
 type RemoveEmoteAction = { type: 'REMOVE_EMOTE', payload: { uuid: number } };
-type EmotesAction = AddEmoteAction | RemoveEmoteAction;
+export type EmotesAction = AddEmoteAction | RemoveEmoteAction;
 
-type Dispatch = (action: EmotesAction | ThunkAction) => any;
+export type Dispatch = (action: EmotesAction | ThunkAction) => any;
 type GetState = () => EmotesState;
 type ThunkAction = (dispatch: Dispatch, getState: GetState) => any;
 
