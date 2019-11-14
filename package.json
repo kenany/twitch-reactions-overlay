@@ -24,12 +24,12 @@
     "node-fetch": "2.6.0",
     "preact": "10.0.1",
     "react-redux": "7.1.1",
-    "react-transition-group": "^2.2.1",
-    "reconnecting-websocket": "^4.1.10",
-    "redux": "^4.0.0",
-    "redux-devtools-extension": "^2.13.2",
-    "redux-thunk": "^2.2.0",
-    "tmi.js": "^1.4.2",
+    "react-transition-group": "2.9.0",
+    "reconnecting-websocket": "4.2.0",
+    "redux": "4.0.4",
+    "redux-devtools-extension": "2.13.8",
+    "redux-thunk": "2.3.0",
+    "tmi.js": "1.5.0",
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v15.11.0"
   },
   "devDependencies": {
