@@ -1,3 +1,4 @@
+name: nodejs
 on: [push]
 jobs:
   build:
