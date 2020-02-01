@@ -71,17 +71,15 @@ async function init() {
     validEmotes.set(emote.name, emote);
   }
 
-  const channelBTTVEmotes = await getChannelBTTVEmotes(
-    process.env.TWITCH_CHANNEL_NAME
-  );
-  for (const emote of channelBTTVEmotes) {
-    validEmotes.set(emote.name, emote);
-  }
-
-  const channelFFZEmotes = await getChannelFFZEmotes(
+  const { twitchId, emotes: channelFFZEmotes } = await getChannelFFZEmotes(
     process.env.TWITCH_CHANNEL_NAME
   );
   for (const emote of channelFFZEmotes) {
+    validEmotes.set(emote.name, emote);
+  }
+
+  const channelBTTVEmotes = await getChannelBTTVEmotes(twitchId);
+  for (const emote of channelBTTVEmotes) {
     validEmotes.set(emote.name, emote);
   }
 

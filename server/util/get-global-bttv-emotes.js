@@ -4,18 +4,26 @@ import fetch from 'node-fetch';
 
 import type { Emote } from '../types';
 
+type ImageType = 'gif' | 'png';
+
+type GlobalBttvEmote = {
+  code: string,
+  id: string,
+  imageType: ImageType,
+  userId: string
+};
+
 async function getGlobalBTTVEmotes(): Promise<Emote[]> {
-  const res = await fetch('https://api.betterttv.net/emotes');
-  const json = await res.json();
-  return json.emotes.map((emote) => {
-    const spl = emote.url.split('/emote/')[1];
+  const res = await fetch('https://api.betterttv.net/3/cached/emotes/global');
+  const json: GlobalBttvEmote[] = await res.json();
+  return json.map((emote) => {
     return {
-      name: emote.regex,
-      id: spl.substring(0, spl.length - 3),
+      name: emote.code,
+      id: emote.id,
       type: 'bttv',
       size: {
-        width: emote.width,
-        height: emote.height
+        width: 28,
+        height: 28
       },
       isGIF: emote.imageType === 'gif'
     };
