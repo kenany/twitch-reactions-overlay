@@ -23,6 +23,5 @@ render(
   <Provider store={store}>
     <App socket={initSocket()} />
   </Provider>,
-  // $FlowFixMe
   document.body
 );

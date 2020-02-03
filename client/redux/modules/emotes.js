@@ -33,7 +33,6 @@ export default function reducer(
     case REMOVE_EMOTE:
       return {
         emotes: state.emotes.filter((emote: UniqueEmote) => {
-          // $FlowFixMe: no idea how `uuid` does not exist here
           return emote.uuid !== action.payload.uuid;
         })
       };
@@ -51,7 +50,6 @@ export function addEmote(emote: Emote, x: number, y: number): ThunkAction {
   return (dispatch) => {
     const newIndex = nextIndex++;
 
-    // $FlowFixMe: object spread + disjoint unions = bad time
     const newEmote: UniqueEmote = {
       ...emote,
       uuid: newIndex,
