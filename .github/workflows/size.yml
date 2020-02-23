@@ -1,0 +1,11 @@
+name: size
+on: [pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: preactjs/compressed-size-action@v1
+      with:
+        pattern: 'build/*.js'
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
