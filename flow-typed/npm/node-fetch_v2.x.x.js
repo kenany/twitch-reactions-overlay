@@ -1,9 +1,21 @@
-// flow-typed signature: 5a2f666ede42baf329fb635bee78d89e
-// flow-typed version: c6154227d1/node-fetch_v2.x.x/flow_>=v0.104.x
+// flow-typed signature: 800c99f4687ac083d3ed2dd6b9ee9457
+// flow-typed version: 711a5f887a/node-fetch_v2.x.x/flow_>=v0.104.x
 
 declare module 'node-fetch' {
   import type http from 'http';
   import type https from 'https';
+  import type { URL } from 'url';
+  import type { Readable } from 'stream';
+
+  declare export type AbortSignal = {
+    +aborted: boolean;
+    +onabort: (event?: { ... }) => void;
+
+    +addEventListener: (name: string, cb: () => mixed) => void;
+    +removeEventListener: (name: string, cb: () => mixed) => void;
+    +dispatchEvent: (event: { ... }) => void;
+    ...,
+  }
 
   declare export class Request mixins Body {
     constructor(input: string | { href: string, ... } | Request, init?: RequestInit): this;
@@ -28,18 +40,31 @@ declare module 'node-fetch' {
 
   declare type HeaderObject = { [index: string]: string, ... }
 
-  declare interface RequestInit {
+  declare type RequestInit = {|
     body?: BodyInit,
     headers?: HeaderObject,
     method?: string,
     redirect?: RequestRedirect,
-    
+    signal?: AbortSignal | null,
+
     // node-fetch extensions
-    agent?: http.Agent | https.Agent,
+    agent?: (URL => (http.Agent | https.Agent)) | http.Agent | https.Agent | null;
     compress?: boolean,
     follow?: number,
     size?: number,
     timeout?: number,
+  |};
+
+  declare export interface FetchError extends Error {
+    name: 'FetchError';
+    type: string;
+    code: ?number;
+    errno: ?number;
+  }
+
+  declare export interface AbortError extends Error {
+    name: 'AbortError';
+    type: 'aborted';
   }
 
   declare type RequestContext =
@@ -102,7 +127,7 @@ declare module 'node-fetch' {
   }
 
   declare type HeaderInit = Headers | Array<string>;
-  declare type BodyInit = string;
+  declare type BodyInit = string | null | Buffer | Blob | Readable;
 
   declare export default function fetch(url: string | Request, init?: RequestInit): Promise<Response>
 }
