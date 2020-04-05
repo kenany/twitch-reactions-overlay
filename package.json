@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "dotenv": "8.2.0",
-    "emotion": "10.0.23",
+    "emotion": "10.0.27",
     "node-fetch": "2.6.0",
     "preact": "10.3.4",
     "react-redux": "7.2.0",
@@ -39,7 +39,7 @@
     "@babel/preset-env": "7.9.0",
     "@kenan/renovate-config": "1.1.1",
     "babel-eslint": "10.1.0",
-    "babel-plugin-emotion": "10.0.23",
+    "babel-plugin-emotion": "10.0.33",
     "bundlesize": "0.18.0",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
