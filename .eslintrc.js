@@ -25,7 +25,11 @@ module.exports = {
     }
   },
   rules: {
-    'prettier/prettier': [1, { arrowParens: 'always', singleQuote: true }],
+    'prettier/prettier': [1, {
+      arrowParens: 'always',
+      singleQuote: true,
+      trailingComma: 'none'
+    }],
     'react-hooks/rules-of-hooks': 2,
     'react-hooks/exhaustive-deps': 1
   }
