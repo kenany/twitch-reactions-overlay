@@ -1,5 +1,9 @@
 {
   "extends": [
     "@kenan"
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": null
+  }
 }
