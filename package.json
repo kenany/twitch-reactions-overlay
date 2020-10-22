@@ -51,6 +51,6 @@
     "optimize-css-assets-webpack-plugin": "5.0.4",
     "preact-cli": "3.0.3",
     "prettier": "2.1.2",
-    "terser-webpack-plugin": "4.2.2"
+    "terser-webpack-plugin": "4.2.3"
   }
 }
