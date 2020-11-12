@@ -21,6 +21,7 @@
   "dependencies": {
     "dotenv": "8.2.0",
     "emotion": "10.0.27",
+    "nanoid": "3.1.16",
     "node-fetch": "2.6.1",
     "preact": "10.5.5",
     "react-redux": "7.2.2",
@@ -30,7 +31,7 @@
     "redux-devtools-extension": "2.13.8",
     "redux-thunk": "2.3.0",
     "tmi.js": "1.5.0",
-    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v18.3.0"
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v18.10.0"
   },
   "devDependencies": {
     "@babel/cli": "7.12.1",

@@ -2,6 +2,7 @@
 
 require('dotenv').config();
 
+import { nanoid } from 'nanoid';
 import process from 'process';
 import tmi from 'tmi.js';
 import { App as WebSocketServer } from 'uWebSockets.js';
@@ -83,11 +84,17 @@ async function init() {
     validEmotes.set(emote.name, emote);
   }
 
-  const sockets = [];
+  const sockets: { [id: string]: WebSocket } = {};
 
   WebSocketServer()
     .ws('/*', {
-      open: (socket) => sockets.push(socket)
+      close: (socket) => {
+        delete sockets[socket.id];
+      },
+      open: (socket) => {
+        socket.id = nanoid();
+        sockets[socket.id] = socket;
+      }
     })
     .listen(3000, (listenSocket) => {
       if (listenSocket) {
@@ -104,8 +111,12 @@ async function init() {
 
     const emotes = parseEmotes(message, userState.emotes);
     if (emotes.length) {
-      for (const socket of sockets) {
-        socket.send(JSON.stringify(emotes));
+      for (const socket in sockets) {
+        try {
+          sockets[socket].send(JSON.stringify(emotes));
+        } catch (_error) {
+          // ignore error
+        }
       }
     }
   });
