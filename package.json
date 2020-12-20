@@ -50,7 +50,7 @@
     "eslint-plugin-react-hooks": "4.2.0",
     "flow-bin": "0.131.0",
     "optimize-css-assets-webpack-plugin": "5.0.4",
-    "preact-cli": "3.0.3",
+    "preact-cli": "3.0.5",
     "prettier": "2.2.1",
     "terser-webpack-plugin": "4.2.3"
   }
