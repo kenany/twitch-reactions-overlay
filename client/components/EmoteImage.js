@@ -2,6 +2,7 @@
 // @jsx h
 
 import { h } from 'preact';
+import type { StatelessFunctionalComponent as SFC } from 'react';
 import { css } from 'emotion';
 
 type Props = {
@@ -10,7 +11,7 @@ type Props = {
   top: string
 };
 
-const EmoteImage = ({ left, src, top }: Props) => {
+const EmoteImage: SFC<Props> = ({ left, src, top }: Props) => {
   const style = css`
     position: absolute;
     left: ${left};

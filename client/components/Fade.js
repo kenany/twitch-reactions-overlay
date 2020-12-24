@@ -1,7 +1,7 @@
 // @flow
 // @jsx h
 
-import type { Element } from 'react';
+import type { Element, StatelessFunctionalComponent as SFC } from 'react';
 import { css } from 'emotion';
 import { h } from 'preact';
 import { CSSTransition } from 'react-transition-group';
@@ -36,7 +36,7 @@ const fadeClassNames = {
   exitActive: fadeExitActive
 };
 
-const Fade = (props: Props) => (
+const Fade: SFC<Props> = (props: Props) => (
   <CSSTransition
     classNames={fadeClassNames}
     in={props.in}

@@ -3,9 +3,9 @@
 
 import { h } from 'preact';
 import { useCallback, useEffect } from 'preact/hooks';
+import type { StatelessFunctionalComponent as SFC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TransitionGroup } from 'react-transition-group';
-import type WebSocket from 'reconnecting-websocket';
 
 import EmoteImage from '../components/EmoteImage';
 import Fade from '../components/Fade';
@@ -17,7 +17,7 @@ type Props = {
   socket: WebSocket
 };
 
-const App = ({ socket }: Props) => {
+const App: SFC<Props> = ({ socket }: Props) => {
   const emotes = useSelector((state: State) => state.emotes.emotes);
 
   const dispatch = useDispatch();
@@ -29,6 +29,9 @@ const App = ({ socket }: Props) => {
   useEffect(() => {
     socket.onmessage = (event) => {
       const { data } = event;
+      if (typeof data !== 'string') {
+        return;
+      }
       const emotes: Emote[] = JSON.parse(data);
 
       const windowWidth = window.innerWidth;
