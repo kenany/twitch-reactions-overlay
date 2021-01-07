@@ -46,7 +46,7 @@
     "eslint-config-prettier": "7.1.0",
     "eslint-plugin-flowtype": "5.2.0",
     "eslint-plugin-prettier": "3.3.0",
-    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react": "7.22.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "flow-bin": "0.141.0",
     "optimize-css-assets-webpack-plugin": "5.0.4",
