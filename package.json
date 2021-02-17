@@ -23,7 +23,7 @@
     "emotion": "10.0.27",
     "nanoid": "3.1.20",
     "node-fetch": "2.6.1",
-    "preact": "10.5.7",
+    "preact": "10.5.12",
     "react-redux": "7.2.2",
     "react-transition-group": "4.4.1",
     "reconnecting-websocket": "4.4.0",
