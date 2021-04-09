@@ -28,7 +28,7 @@
     "react-transition-group": "4.4.1",
     "reconnecting-websocket": "4.4.0",
     "redux": "4.0.5",
-    "redux-devtools-extension": "2.13.8",
+    "redux-devtools-extension": "2.13.9",
     "redux-thunk": "2.3.0",
     "tmi.js": "1.7.5",
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v18.10.0"
