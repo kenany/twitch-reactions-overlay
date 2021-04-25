@@ -42,7 +42,7 @@
     "babel-eslint": "10.1.0",
     "babel-plugin-emotion": "10.2.2",
     "bundlesize": "0.18.1",
-    "eslint": "7.24.0",
+    "eslint": "7.25.0",
     "eslint-config-prettier": "7.2.0",
     "eslint-plugin-flowtype": "5.7.2",
     "eslint-plugin-prettier": "3.4.0",
