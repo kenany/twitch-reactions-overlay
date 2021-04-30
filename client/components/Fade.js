@@ -2,7 +2,7 @@
 // @jsx h
 
 import type { Element, StatelessFunctionalComponent as SFC } from 'react';
-import { css } from 'emotion';
+import { css } from '@emotion/css';
 import { h } from 'preact';
 import { CSSTransition } from 'react-transition-group';
 

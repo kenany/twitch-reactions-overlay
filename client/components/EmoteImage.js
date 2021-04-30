@@ -3,7 +3,7 @@
 
 import { h } from 'preact';
 import type { StatelessFunctionalComponent as SFC } from 'react';
-import { css } from 'emotion';
+import { css } from '@emotion/css';
 
 type Props = {
   left: string,

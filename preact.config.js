@@ -3,7 +3,7 @@
 require('dotenv').config();
 
 import flowStripTypes from '@babel/plugin-transform-flow-strip-types';
-import emotionPlugin from 'babel-plugin-emotion';
+import emotionPlugin from '@emotion/babel-plugin';
 import process from 'process';
 
 export default (config, env, helpers) => {

@@ -4,6 +4,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/setup-node@v2.1.5
+      with:
+        node-version: 14
+    - name: Update npm
+      run: |
+        npm install -g npm
+        npm --version
     - uses: actions/checkout@v2.3.4
     - uses: preactjs/compressed-size-action@2.1.0
       with:
