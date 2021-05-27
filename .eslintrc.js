@@ -4,8 +4,6 @@ module.exports = {
     'plugin:flowtype/recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
-    'prettier/flowtype',
-    'prettier/react'
   ],
   env: {
     es6: true
