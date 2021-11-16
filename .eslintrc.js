@@ -8,8 +8,10 @@ module.exports = {
   env: {
     es6: true
   },
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 7,
+    requireConfigFile: false,
     sourceType: 'module'
   },
   plugins: [
