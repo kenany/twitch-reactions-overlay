@@ -48,7 +48,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.27.1",
     "eslint-plugin-react-hooks": "4.3.0",
-    "flow-bin": "0.141.0",
+    "flow-bin": "0.168.0",
     "preact-cli": "3.3.2",
     "prettier": "2.4.1"
   }
