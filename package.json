@@ -19,7 +19,7 @@
     "validate": "npm run build && npm run lint && npm run flow"
   },
   "dependencies": {
-    "@emotion/css": "11.5.0",
+    "@emotion/css": "11.7.1",
     "dotenv": "10.0.0",
     "nanoid": "3.1.30",
     "node-fetch": "2.6.6",
@@ -39,7 +39,7 @@
     "@babel/eslint-parser": "7.16.3",
     "@babel/plugin-transform-flow-strip-types": "7.16.0",
     "@babel/preset-env": "7.16.4",
-    "@emotion/babel-plugin": "11.3.0",
+    "@emotion/babel-plugin": "11.7.2",
     "@kenan/renovate-config": "1.5.1",
     "bundlesize": "0.18.1",
     "eslint": "8.5.0",
