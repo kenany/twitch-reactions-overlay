@@ -7,7 +7,7 @@ Studio, so that the emotes can be shown on stream as an overlay.
 ## Usage
 
 ```
-$ npm install
+$ npm ci
 $ cp .env.example .env
 
 # edit `.env`
