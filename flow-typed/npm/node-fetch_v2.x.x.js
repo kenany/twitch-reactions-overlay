@@ -1,5 +1,5 @@
-// flow-typed signature: 800c99f4687ac083d3ed2dd6b9ee9457
-// flow-typed version: 711a5f887a/node-fetch_v2.x.x/flow_>=v0.104.x
+// flow-typed signature: 6235af8d0ca0dceee176d5725c3f39f4
+// flow-typed version: 3eb1bfcf4e/node-fetch_v2.x.x/flow_>=v0.104.x
 
 declare module 'node-fetch' {
   import type http from 'http';
@@ -56,14 +56,16 @@ declare module 'node-fetch' {
   |};
 
   declare export interface FetchError extends Error {
-    name: 'FetchError';
+    // cannot set name due to incompatible extend error
+    // name: 'FetchError';
     type: string;
     code: ?number;
     errno: ?number;
   }
 
   declare export interface AbortError extends Error {
-    name: 'AbortError';
+    // cannot set name due to incompatible extend error
+    // name: 'AbortError';
     type: 'aborted';
   }
 
@@ -86,6 +88,10 @@ declare module 'node-fetch' {
     has(name: string): boolean;
     raw(): { [k: string]: string[], ... };
     set(name: string, value: string): void;
+    entries(): Iterator<[string, string]>;
+    keys(): Iterator<string>;
+    values(): Iterator<string>;
+    @@iterator(): Iterator<[string, string]>;
   }
 
   declare export class Body {
