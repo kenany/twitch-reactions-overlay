@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@emotion/css": "11.7.1",
-    "dotenv": "11.0.0",
+    "dotenv": "16.0.0",
     "nanoid": "3.2.0",
     "node-fetch": "2.6.7",
     "preact": "10.6.6",
