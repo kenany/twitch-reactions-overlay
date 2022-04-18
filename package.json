@@ -46,7 +46,7 @@
     "eslint-plugin-flowtype": "8.0.3",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.29.4",
-    "eslint-plugin-react-hooks": "4.3.0",
+    "eslint-plugin-react-hooks": "4.4.0",
     "flow-bin": "0.174.1",
     "preact-cli": "3.3.5",
     "prettier": "2.6.2"
