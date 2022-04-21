@@ -27,7 +27,7 @@
     "react-redux": "7.2.8",
     "react-transition-group": "4.4.2",
     "reconnecting-websocket": "4.4.0",
-    "redux": "4.1.2",
+    "redux": "4.2.0",
     "redux-devtools-extension": "2.13.9",
     "redux-thunk": "2.4.1",
     "tmi.js": "1.8.5",
