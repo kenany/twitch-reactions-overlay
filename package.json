@@ -22,7 +22,7 @@
     "@emotion/css": "11.9.0",
     "dotenv": "16.0.0",
     "nanoid": "3.3.3",
-    "node-fetch": "2.6.7",
+    "node-fetch": "3.2.5",
     "preact": "10.7.1",
     "react-redux": "8.0.2",
     "react-transition-group": "4.4.2",
