@@ -23,7 +23,7 @@
     "dotenv": "16.0.1",
     "nanoid": "3.3.4",
     "node-fetch": "2.6.7",
-    "preact": "10.7.3",
+    "preact": "10.10.0",
     "react-redux": "8.0.2",
     "react-transition-group": "4.4.2",
     "reconnecting-websocket": "4.4.0",
