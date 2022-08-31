@@ -18,7 +18,7 @@ jobs:
         npm install -g npm
         npm --version
     - name: Install dependencies
-      uses: bahmutov/npm-install@v1.8.17
+      uses: bahmutov/npm-install@v1.8.22
     - name: Validate
       run: npm run validate
       env:
