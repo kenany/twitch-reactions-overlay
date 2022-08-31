@@ -39,7 +39,7 @@
     "@babel/eslint-parser": "7.17.0",
     "@babel/plugin-transform-flow-strip-types": "7.16.7",
     "@babel/preset-env": "7.16.11",
-    "@emotion/babel-plugin": "11.10.0",
+    "@emotion/babel-plugin": "11.10.2",
     "bundlesize": "0.18.1",
     "eslint": "8.23.0",
     "eslint-config-prettier": "8.5.0",
