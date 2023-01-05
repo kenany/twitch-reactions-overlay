@@ -42,7 +42,7 @@
     "@emotion/babel-plugin": "11.10.2",
     "bundlesize": "0.18.1",
     "eslint": "8.31.0",
-    "eslint-config-prettier": "8.5.0",
+    "eslint-config-prettier": "8.6.0",
     "eslint-plugin-flowtype": "8.0.3",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.31.11",
