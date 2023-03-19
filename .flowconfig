@@ -4,6 +4,9 @@
 [lints]
 all=warn
 
+[options]
+exact_by_default=false
+
 [strict]
 nonstrict-import
 sketchy-null

@@ -8,6 +8,6 @@ import type {
 
 export type Action = EmotesAction;
 export type Dispatch = EmotesDispatch;
-export type State = {
-  +emotes: EmotesState
-};
+export type State = {|
+  emotes: EmotesState
+|};

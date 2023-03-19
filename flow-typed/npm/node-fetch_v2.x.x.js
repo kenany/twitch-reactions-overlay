@@ -1,5 +1,5 @@
-// flow-typed signature: 6235af8d0ca0dceee176d5725c3f39f4
-// flow-typed version: 3eb1bfcf4e/node-fetch_v2.x.x/flow_>=v0.104.x
+// flow-typed signature: bdb0f291726a139981cef71f997adbd4
+// flow-typed version: f93976a55e/node-fetch_v2.x.x/flow_>=v0.104.x
 
 declare module 'node-fetch' {
   import type http from 'http';
@@ -133,7 +133,7 @@ declare module 'node-fetch' {
   }
 
   declare type HeaderInit = Headers | Array<string>;
-  declare type BodyInit = string | null | Buffer | Blob | Readable;
+  declare type BodyInit = string | null | Buffer | Blob | Readable | URLSearchParams;
 
   declare export default function fetch(url: string | Request, init?: RequestInit): Promise<Response>
 }
