@@ -41,7 +41,7 @@
     "@babel/preset-env": "7.20.2",
     "@emotion/babel-plugin": "11.10.2",
     "bundlesize": "0.18.1",
-    "eslint": "8.40.0",
+    "eslint": "8.42.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-flowtype": "8.0.3",
     "eslint-plugin-prettier": "4.2.1",
