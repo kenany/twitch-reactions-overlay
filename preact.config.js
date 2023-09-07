@@ -9,8 +9,8 @@ import process from 'process';
 export default (config, env, helpers) => {
   const { rule } = helpers.getLoadersByName(config, 'babel-loader')[0];
 
-  rule.options.plugins.push(flowStripTypes);
-  rule.options.plugins.push(emotionPlugin);
+  rule.use[0].options.plugins.push(flowStripTypes);
+  rule.use[0].options.plugins.push(emotionPlugin);
 
   config.plugins.push(
     new helpers.webpack.DefinePlugin({
