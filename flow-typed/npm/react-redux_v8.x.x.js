@@ -1,5 +1,5 @@
-// flow-typed signature: ac3c3bfd0c0a853cc9f58c16521d8a9f
-// flow-typed version: efe3d0abb1/react-redux_v8.x.x/flow_>=v0.142.x
+// flow-typed signature: c58476951abbac600456261bef591160
+// flow-typed version: 7f80ad643f/react-redux_v8.x.x/flow_>=v0.201.x
 
 /**
 The order of type arguments for connect() is as follows:
@@ -219,7 +219,8 @@ declare module "react-redux" {
 
   declare export type AnyAction = {
     ...Action<any>,
-    [string]: any
+    [string]: any,
+    ...
   }
 
   declare export type Dispatch<-A: Action<any>> = (action: A, ...extraArgs: any[]) => mixed
@@ -256,7 +257,7 @@ declare module "react-redux" {
   declare export function createProvider(
     storeKey?: string,
     subKey?: string,
-  ): Class<Provider<*>>;
+  ): Class<Provider<any>>;
 
   declare export function batch(() => void): void
 

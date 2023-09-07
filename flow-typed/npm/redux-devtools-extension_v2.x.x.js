@@ -1,9 +1,9 @@
-// flow-typed signature: cc8061f45a9be2b6e5c14e9f191a77de
-// flow-typed version: 0cbf8d07a7/redux-devtools-extension_v2.x.x/flow_>=v0.104.x
+// flow-typed signature: fc9c809b5328b0e55ebfdda652b48f62
+// flow-typed version: 9a968c602c/redux-devtools-extension_v2.x.x/flow_>=v0.201.x
 
 declare type DispatchAPI<A> = (action: A) => A;
 
-declare type Dispatch<A: { type: *, ... }> = DispatchAPI<A>;
+declare type Dispatch<A: { type: any, ... }> = DispatchAPI<A>;
 
 declare type Store<S, A, D = Dispatch<A>> = {
   dispatch: D,

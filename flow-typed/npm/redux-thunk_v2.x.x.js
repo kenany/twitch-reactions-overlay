@@ -1,5 +1,5 @@
-// flow-typed signature: 70deb399800b3a0577c45ce8a21434b8
-// flow-typed version: c63bca1648/redux-thunk_v2.x.x/flow_>=v0.83.x
+// flow-typed signature: d6daf4f8afc2aaf522648af2b9b46ade
+// flow-typed version: 9a968c602c/redux-thunk_v2.x.x/flow_>=v0.201.x
 
 // Copied types from redux so that
 // redux-thunk can be used with redux and redux-mock-store.
@@ -9,7 +9,7 @@
 declare module '@@redux' {
   declare export type DispatchAPI<A> = (action: A) => A;
 
-  declare export type Dispatch<A: { type: *, ... }> = DispatchAPI<A>;
+  declare export type Dispatch<A: { type: any, ... }> = DispatchAPI<A>;
 
   declare export type MiddlewareAPI<S, A, D = Dispatch<A>> = {
     dispatch: D,

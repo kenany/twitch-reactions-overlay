@@ -7,7 +7,7 @@ import { h } from 'preact';
 import { CSSTransition } from 'react-transition-group';
 
 type Props = {
-  children: Element<*>,
+  children: Element<any>,
   in?: boolean
 };
 

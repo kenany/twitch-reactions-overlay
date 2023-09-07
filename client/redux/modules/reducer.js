@@ -1,11 +1,11 @@
 // @flow
 
-import { combineReducers, type CombinedReducer } from 'redux';
+import { combineReducers, type Reducer } from 'redux';
 
 import emotes, { type EmotesAction } from './emotes';
 import type { State } from '../types';
 
-const reducers: CombinedReducer<State, EmotesAction> = combineReducers({
+const reducers: Reducer<State, EmotesAction> = combineReducers({
   emotes
 });
 
