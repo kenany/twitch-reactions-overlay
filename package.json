@@ -9,7 +9,7 @@
     "last 1 Chrome version"
   ],
   "scripts": {
-    "build-client": "preact build --src client --no-prerender",
+    "build-client": "cross-env NODE_OPTIONS=--openssl-legacy-provider preact build --src client --no-prerender",
     "build-server": "babel server --out-dir out --source-maps",
     "build": "npm run build-client && npm run build-server",
     "flow": "flow check",
@@ -41,6 +41,7 @@
     "@babel/preset-env": "7.22.10",
     "@emotion/babel-plugin": "11.11.0",
     "bundlesize": "0.18.1",
+    "cross-env": "^7.0.3",
     "eslint": "8.47.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-flowtype": "8.0.3",
@@ -48,7 +49,7 @@
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "flow-bin": "0.203.1",
-    "preact-cli": "3.4.1",
+    "preact-cli": "3.5.0",
     "prettier": "2.8.8"
   }
 }
