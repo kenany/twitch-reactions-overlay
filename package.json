@@ -34,11 +34,11 @@
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.4.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.22.10",
-    "@babel/core": "7.22.10",
-    "@babel/eslint-parser": "7.22.10",
+    "@babel/cli": "7.22.15",
+    "@babel/core": "7.22.20",
+    "@babel/eslint-parser": "7.22.15",
     "@babel/plugin-transform-flow-strip-types": "7.22.5",
-    "@babel/preset-env": "7.22.10",
+    "@babel/preset-env": "7.22.20",
     "@emotion/babel-plugin": "11.11.0",
     "bundlesize": "0.18.1",
     "cross-env": "7.0.3",
