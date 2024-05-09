@@ -40,7 +40,7 @@
     "@babel/plugin-transform-flow-strip-types": "7.24.1",
     "@babel/preset-env": "7.24.4",
     "@emotion/babel-plugin": "11.11.0",
-    "bundlesize": "0.18.1",
+    "bundlesize": "0.18.2",
     "cross-env": "7.0.3",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
