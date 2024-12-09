@@ -34,7 +34,7 @@
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.4.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.25.9",
+    "@babel/cli": "7.26.4",
     "@babel/core": "7.26.0",
     "@babel/eslint-parser": "7.25.9",
     "@babel/plugin-transform-flow-strip-types": "7.25.9",
